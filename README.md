@@ -1,3 +1,4 @@
+
 # Handwritten Text Recognition with TensorFlow
 
 Handwritten Text Recognition (HTR) system implemented with TensorFlow (TF) and trained on the IAM off-line HTR dataset.
@@ -30,6 +31,11 @@ The following Fig shows an overview of our HTR system.
 The NN written as a mathematical function which maps an image M to a character sequence (c1, c2, …).
 
 ![equation](./SimpleHTR/doc/eq.png)
+
+### Operations
+**CNN**: the input image is fed into the CNN layers. The network outputs a feature map (or sequence) has a size of 32×256.
+**RNN**: the feature sequence contains 256 features per time-step, the RNN propagates relevant information through this sequence. The RNN output sequence is mapped to a matrix of size 32×80. 
+**CTC**: while training the NN, the CTC is given the RNN output matrix and the ground truth text and it computes the **loss value**. 
 
 ## References
 \[1\] [Handwritten Text Recognition with TensorFlow](https://github.com/githubharald/SimpleHTR)
