@@ -78,6 +78,10 @@ The NN written as a mathematical function which maps an image M to a character s
 **RNN**: the feature sequence contains 256 features per time-step, the RNN propagates relevant information through this sequence. The RNN output sequence is mapped to a matrix of size 32×80.<br />
 **CTC**: while training the NN, the CTC is given the RNN output matrix and the ground truth text and it computes the **loss value**. 
 
+## Sample Output
+Top: input image. Bottom: Probabilities for the characters “l”, “i”, “t”, “e” and the CTC blank label.
+![SampleOut](./SimpleHTR/doc/SampleOut.png)
+
 ## References
 \[1\] [Handwritten Text Recognition with TensorFlow](https://github.com/githubharald/SimpleHTR)
 
