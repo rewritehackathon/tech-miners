@@ -35,6 +35,22 @@ This Neural Network (NN) model recognizes the text contained in the images of se
 4. pip install opencv-python
 5. pip install editdistance
 
+## Run demo (On the Use of Transfer Learning)
+Go to the `SimpleHTR/model/` directory and unzip the file `model.zip` (pre-trained on the IAM dataset).
+Take care that the unzipped files are placed directly into the `SimpleHTR/model/` directory and not some subdirectory created by the unzip-program.
+Afterwards, go to the `SimpleHTR/src/` directory and run `python main.py`.
+The input image and the expected output is shown below.
+
+![test](SimpleHTR/data/test.png)
+
+```
+> python main.py
+Validation character error rate of saved model: 10.624916%
+Init with stored values from ../model/snapshot-38
+Recognized: "little"
+Probability: 0.96625507
+```
+
 ## Datasets
 ### IAM dataset
 The data-loader expects the IAM dataset \[\3]. 
