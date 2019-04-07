@@ -38,11 +38,6 @@ We recommend using Anaconda for running the script. Run the following command on
 4. pip install opencv-python
 5. pip install editdistance
 
-## Prepopulated form fields for the mobile app
-Once the model is trained and validated using a comprehensive dataset, running the model on the test dataset will be pretty fast. This step will cost on the order of a few seconds for each word (**Note**: each word has a limit of 32 characters).
-In this step, fields from the form will be input into the model and the model outputs the recognized text along with the probability of getting the recognized text which actually shows the performance of the model. 
-Finally, the output texts will then be saved into the database of our mobile app, and will be used for estimation of the risks that are going to affect the final price of the business insurance.
-
 ## Datasets
 ### IAM dataset
 The data-loader expects the IAM dataset \[\3]. 
@@ -83,6 +78,11 @@ Probability: 0.96625507
 **Top**: input image.<br />
 **Bottom**: Probabilities for the characters “l”, “i”, “t”, “e” and the CTC blank label.
 ![SampleOut](SimpleHTR/doc/SampleOut.png)
+
+## Prepopulated form fields for the mobile app
+Once the model is trained and validated using a comprehensive dataset, running the model on the test dataset will be pretty fast. This step will cost on the order of a few seconds for each word (**Note**: each word has a limit of 32 characters).
+In this step, fields from the form will be input into the model and the model outputs the recognized text along with the probability of getting the recognized text which actually shows the performance of the model. 
+Finally, the output texts will be saved into the database of our mobile app, and will be used for estimation of the risks that are going to affect the final price of the business insurance.
 
 ## References
 \[1\] [Handwritten Text Recognition with TensorFlow](https://github.com/githubharald/SimpleHTR)
