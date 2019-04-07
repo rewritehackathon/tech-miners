@@ -16,10 +16,13 @@ This Neural Network (NN) model recognizes the text contained in the images of se
 
 
 ## Requirements
-* python         3.5.5
-* numpy          1.15.2 
-* opencv-python  4.0.0.21
-* tensorflow     1.13.1
+* python                    3.5.5
+* numpy                     1.15.2 
+* opencv-python             4.0.0.21
+* tensorflow                1.13.1
+* editdistance              0.5.3
+* Keras-Applications        1.0.7      
+* Keras-Preprocessing       1.0.9
 
 
 ## Model Overview
