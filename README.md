@@ -1,15 +1,16 @@
 
 # Handwritten Text Recognition with TensorFlow
 
-This repository contains code samples for on ["Handwritten Text Recognition with TensorFlow"](https://github.com/githubharald/SimpleHTR).
-The code is written using Python. The program `src/main.py` uses Tensorflow, and OpenCV
-libraries. It needs modification for compatibility with other applications and new datasets.
+## Introduction
+
+Hand Writing Recognition is one of significant applications of machine learning. Post services for example use this technology to sort and deliver our packages. In this simple project we recommend using a pre-trained neural network (Transfer Learning) to recognize text written by hand. You need a lot of data if you want to use/train CNN or RNN. Transfer learning bust the need for a large amount of data. The pre-trained model then can be fine-tunded for the task at hand. 
 
 Handwritten Text Recognition (HTR) system implemented with TensorFlow (TF) and trained on the IAM off-line HTR dataset.
 This Neural Network (NN) model recognizes the text contained in the images of segmented words as shown in the illustration below.
+As these word-images are smaller than images of complete text-lines, the NN can be kept small and training on the CPU is feasible.
+3/4 of the words from the validation-set are correctly recognized and the character error rate is around 10%.
 
-![htr](./SimpleHTR/doc/htr.png)
-
+![htr](./doc/htr.png)
 
 ## Command line arguments
 
