@@ -27,6 +27,14 @@ This Neural Network (NN) model recognizes the text contained in the images of se
 * Keras-Applications        1.0.7      
 * Keras-Preprocessing       1.0.9
 
+## Setup the Environment
+1. conda create -n DNN python=3.5
+2. source activate DNN
+3. conda install pandas numpy scipy jupyter cython 
+3. pip install tensorflow 
+4. pip install opencv-python
+5. pip install editdistance
+
 ## Datasets
 ### IAM dataset
 The data-loader expects the IAM dataset \[\3]. 
