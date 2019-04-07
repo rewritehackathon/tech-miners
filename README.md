@@ -80,7 +80,7 @@ The NN written as a mathematical function which maps an image M to a character s
 
 ## Sample Output
 Top: input image. Bottom: Probabilities for the characters “l”, “i”, “t”, “e” and the CTC blank label.
-![SampleOut](./SimpleHTR/doc/SampleOut.png)
+![SampleOut](SimpleHTR/doc/SampleOut.png)
 
 ## References
 \[1\] [Handwritten Text Recognition with TensorFlow](https://github.com/githubharald/SimpleHTR)
