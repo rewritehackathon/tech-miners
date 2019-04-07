@@ -38,21 +38,6 @@ We recommend using Anaconda for running the script. Run the following command on
 4. pip install opencv-python
 5. pip install editdistance
 
-## Run demo (On the Use of Transfer Learning)
-Go to the `SimpleHTR/model/` directory and unzip the file `model.zip` (pre-trained on the IAM dataset).
-Take care that the unzipped files are placed directly into the `SimpleHTR/model/` directory and not some subdirectory created by the unzip-program.
-Afterwards, go to the `SimpleHTR/src/` directory and run `python main.py`.
-The input image and the expected output is shown below.
-
-![test](SimpleHTR/data/test.png)
-
-```
-> python main.py
-Validation character error rate of saved model: 10.624916%
-Init with stored values from ../model/snapshot-38
-Recognized: "little"
-Probability: 0.96625507
-```
 ## Prepopulated form fields for the mobile app
 Once the model is trained and validated using a comprehensive dataset, running the model on the test dataset will be pretty fast. This step will cost on the order of a few seconds for each word (**Note**: each word has a limit of 32 characters).
 In this step, fields from the form will be input into the model and the model outputs the recognized text along with the probability of getting the recognized text which actually shows the performance of the model. 
@@ -77,6 +62,22 @@ The NN written as a mathematical function which maps an image M to a character s
 **CNN**: the input image is fed into the CNN layers. The network outputs a feature map (or sequence) has a size of 32×256.
 **RNN**: the feature sequence contains 256 features per time-step, the RNN propagates relevant information through this sequence. The RNN output sequence is mapped to a matrix of size 32×80.<br />
 **CTC**: while training the NN, the CTC is given the RNN output matrix and the ground truth text and it computes the **loss value**. 
+
+## Run demo (On the Use of Transfer Learning)
+Go to the `SimpleHTR/model/` directory and unzip the file `model.zip` (pre-trained on the IAM dataset).
+Take care that the unzipped files are placed directly into the `SimpleHTR/model/` directory and not some subdirectory created by the unzip-program.
+Afterwards, go to the `SimpleHTR/src/` directory and run `python main.py`.
+The input image and the expected output is shown below.
+
+![test](SimpleHTR/data/test.png)
+
+```
+> python main.py
+Validation character error rate of saved model: 10.624916%
+Init with stored values from ../model/snapshot-38
+Recognized: "little"
+Probability: 0.96625507
+```
 
 ## Sample Output
 **Top**: input image.<br />
