@@ -33,5 +33,6 @@ The NN written as a mathematical function which maps an image M to a character s
 
 ## References
 \[1\] [Handwritten Text Recognition with TensorFlow](https://github.com/githubharald/SimpleHTR)
+
 \[2\] [Build a Handwritten Text Recognition System using TensorFlow](https://towardsdatascience.com/2326a3487cd5)
 
