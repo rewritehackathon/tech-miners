@@ -10,7 +10,7 @@ This Neural Network (NN) model recognizes the text contained in the images of se
 As these word-images are smaller than images of complete text-lines, the NN can be kept small and training on the CPU is feasible.
 3/4 of the words from the validation-set are correctly recognized and the character error rate is around 10%.
 
-![htr](./doc/htr.png)
+![htr](SimpleHTR/doc/htr.png)
 
 ## Command line arguments
 
