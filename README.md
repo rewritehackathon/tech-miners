@@ -18,7 +18,6 @@ This Neural Network (NN) model recognizes the text contained in the images of se
 * `--beamsearch`: use vanilla beam search decoding (better, but slower) instead of best path decoding.
 * `--wordbeamsearch`: use word beam search decoding (only outputs words contained in a dictionary) instead of best path decoding. This is a custom TF operation and must be compiled from source, more information see corresponding section below. It should **not** be used when training the NN.
 
-
 ## Requirements
 * python                    3.5.5
 * numpy                     1.15.2 
@@ -28,6 +27,10 @@ This Neural Network (NN) model recognizes the text contained in the images of se
 * Keras-Applications        1.0.7      
 * Keras-Preprocessing       1.0.9
 
+## Datasets
+### IAM dataset
+The data-loader expects the IAM dataset \[\3]. 
+The model can work with other type of datasets as well. Either convert your dataset to the IAM format (look at words.txt and the corresponding directory structure) or necessary modifications to the class DataLoader will be necessary according to your dataset format. 
 
 ## Model Overview
 We use a NN for our task. It consists of convolutional NN (CNN) layers, recurrent NN (RNN) layers and a final Connectionist Temporal Classification (CTC) layer. 
@@ -48,6 +51,8 @@ The NN written as a mathematical function which maps an image M to a character s
 \[1\] [Handwritten Text Recognition with TensorFlow](https://github.com/githubharald/SimpleHTR)
 
 \[2\] [Build a Handwritten Text Recognition System using TensorFlow](https://towardsdatascience.com/2326a3487cd5)
+
+\[3\] [Marti - The IAM-database: an English sentence database for offline handwriting recognition](http://www.fki.inf.unibe.ch/databases/iam-handwriting-database)
 
 ## License
 
