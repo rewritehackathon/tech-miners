@@ -27,7 +27,9 @@ This Neural Network (NN) model recognizes the text contained in the images of se
 * Keras-Applications        1.0.7      
 * Keras-Preprocessing       1.0.9
 
-## Setup the Environment
+## Environment Setup 
+We recommend using Anaconda for running the script. Run the following command on conda shell to create a new environment with all the required packages. 
+
 1. conda create -n DNN python=3.5
 2. source activate DNN
 3. conda install pandas numpy scipy jupyter cython 
