@@ -50,6 +50,11 @@ Init with stored values from ../model/snapshot-38
 Recognized: "little"
 Probability: 0.96625507
 ```
+## Prepopulated form fields for the mobile app:
+Once the moddel is trained and validated using a comprehensive dataset, running the test dataset will be pretty fast.
+Running the model for each word with a limit of 32 characters will take in the order of a few seconds.
+In these step, fields from the form will input into the model and the model outputs the recognized text along with the probability of getting the recognized text which actually shows the performance of the model. 
+The output texts will then be saved into the database of our mobile app, and will be used for estimation of the risks that are going to affect the final price of the business insurance.
 
 ## Datasets
 ### IAM dataset
